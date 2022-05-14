@@ -1,0 +1,34 @@
+{
+  "name": "replace-env",
+  "description": "Replace environment variables in files",
+  "version": "1.0.0",
+  "keywords": [
+    "github",
+    "actions",
+    "github actions",
+    "replace",
+    "environment variables"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nightstory/replace-env.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nightstory/replace-env/issues"
+  },
+  "homepage": "https://github.com/nightstory/replace-env#readme",
+  "author": "nightstory",
+  "dependencies": {
+    "@actions/core": "^1.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.17",
+    "@vercel/ncc": "^0.33.3",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/ncc build --license licenses.txt --source-map -m -q src/main.ts -o lib"
+  }
+}

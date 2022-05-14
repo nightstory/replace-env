@@ -1,0 +1,24 @@
+name: 'replace-env'
+description: 'Replace environment variables in files'
+branding:
+  icon: briefcase
+  color: blue
+inputs:
+  input_file:
+    description: 'Input file path'
+    required: true
+  output_file:
+    description: 'Output file path'
+    default: ''
+    required: false
+  fail_on_missing_env:
+    description: 'Whether to fail if an env var mentioned in the input file does not exist'
+    default: 'false'
+    required: false
+  pattern:
+    description: 'Pattern to replace the variables: single_dollar_brackets, double_dollar_brackets, double_underscore'
+    default: 'single_dollar_brackets'
+    required: false
+runs:
+  using: 'node16'
+  main: 'lib/index.js'
