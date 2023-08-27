@@ -4,7 +4,7 @@
 
 - `input_file`
     - Path to file with the placeholders to replace.
-- `input_file`
+- `output_file`
     - Path to output file.
     - Optional, defaults to `input_file`
 - `pattern`
