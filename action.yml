@@ -5,10 +5,10 @@ branding:
   color: blue
 inputs:
   input_file:
-    description: 'Input file path'
+    description: 'Path to file with the placeholders to replace. If directory, will replace all files in the directory.'
     required: true
   output_file:
-    description: 'Output file path'
+    description: 'Path to output file. If `input_file` is directory, will be a directory too. Optional, defaults to `input_file`'
     default: ''
     required: false
   fail_on_missing_env:

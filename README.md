@@ -1,11 +1,11 @@
-# Replace environment variabels in files in a GitHub Action
+# Replace environment variables in files in a GitHub Action
 
 ## Inputs
 
 - `input_file`
-    - Path to file with the placeholders to replace.
-- `input_file`
-    - Path to output file.
+    - Path to file with the placeholders to replace. If directory, will replace all files in the directory.
+- `output_file`
+    - Path to output file. If `input_file` is directory, will be a directory too.
     - Optional, defaults to `input_file`
 - `pattern`
     - Which placeholders to replace.
